@@ -29,4 +29,9 @@ go run main.go generate -p ./example/ex1.xlsx
 でxlsxファイルと同じ場所にsqlファイルが生成される
 
 ## build
-script/build.shを回せば、distフォルダにバイナリファイルが格納される
+
+```
+cd script
+sh build.sh
+```
+で、script/build.shを回せば、distフォルダにバイナリファイルが格納される

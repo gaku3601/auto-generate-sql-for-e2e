@@ -32,8 +32,8 @@ func NewOperationExcel(path string) (*OperationExcel, error) {
 }
 
 func (o OperationExcel) Execute(outputPath string, fileName string) error {
-	// SQLファイルを作成する
-	f, err := NewFile(fmt.Sprintf("%s/%s.%s", outputPath, fileName, "sql"))
+	// TXTファイルを作成する
+	f, err := NewFile(fmt.Sprintf("%s/%s.%s", outputPath, fileName, "txt"))
 	if err != nil {
 		return err
 	}
